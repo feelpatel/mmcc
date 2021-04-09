@@ -1,0 +1,27 @@
+$theme-colors: (
+  "primary": #c5000a,
+  "secondary": #021128,
+  "light":#eef1f3,
+  "danger": #c5000a,
+  "dark":#000c1f
+);
+$text-muted:#9a9a9a;
+$border-color:#efefef;
+
+$input-btn-font-size:1rem;
+$input-btn-font-size-sm:1rem;
+$input-btn-font-size-lg:1rem;
+
+$input-btn-padding-y:         .65rem;
+$input-btn-padding-x:         1.125rem;
+$input-btn-padding-y-lg:      0.875rem;
+$input-btn-padding-x-lg:      1.25rem;
+
+$input-placeholder-color:#c4c9ce;
+
+
+// Tooltips
+$tooltip-bg: #021128;
+
+// Bootstrap and its default variables
+@import "scss/bootstrap";

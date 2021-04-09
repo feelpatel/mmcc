@@ -1,0 +1,31 @@
+//@import "../vendors/bootstrap/scss/functions";
+//@import "../vendors/bootstrap/scss/variables";
+@import "color";
+/*Bootstrap css*/
+$container-max-widths: (
+  xl: 1330px
+);
+
+$input-placeholder-color:$gray-500;
+
+$input-btn-font-size:1rem;
+$input-btn-font-size-sm:0.875rem;
+$input-btn-font-size-lg:1rem;
+
+$input-btn-padding-y:         .5rem;
+$input-btn-padding-x:         1rem;
+$input-btn-padding-y-lg:      .75rem;
+$input-btn-padding-x-lg:      1.25rem;
+
+$border-radius:0;
+
+// Bootstrap and its default variables
+@import "../../vendors/bootstrap/scss/bootstrap";
+//@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// owl.carousel.min
+//@import "../vendors/owl/owl.carousel.min";
+// fancybox.min
+@import "../../vendors/fancybox/jquery.fancybox.min";
+// menu
+@import "menu";
+@import "style";

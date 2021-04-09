@@ -1,0 +1,64 @@
+.main-menu{position: relative;}
+.nav-menu, .nav-menu * {margin: 0;padding: 0;list-style: none;}
+.nav-menu ul {position: absolute;display: none;top: 100%;left: 0;z-index: 99}
+.nav-menu li {position: relative;white-space: nowrap}
+.nav-menu li:hover > ul, .nav-menu li.sfHover > ul {display: block}
+.nav-menu ul ul {top: 0;left: 100%}
+.nav-menu ul li {min-width: 180px}
+.sf-arrows .sf-with-ul {padding-right: 36px}
+.sf-arrows .sf-with-ul:after {content: "\ea17";position: absolute;right: 10px;font-family: 'boxicons' !important;font-style: normal;font-weight: normal;font-size: 1.25rem;}
+.sf-arrows ul .sf-with-ul:after {content: "\ea1d"}
+.nav-menu a {padding: 16px 25px;text-decoration: none;display: inline-block;color: #292d33 ;font-size: 1rem;outline: none;letter-spacing: 0.26px;font-weight: 600;}
+.nav-menu > li:hover > a {color: #c5000a;}
+.nav-menu ul {margin: 0;padding: 10px;box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);background: #fff}
+.nav-menu ul li {transition: 0.3s}
+.nav-menu ul li a {padding: 5px 10px;color: #292d33 ;transition: 0.3s;display: block;font-size: 0.875rem;text-transform: none}
+.nav-menu ul li:hover > a,
+.menu-has-children li.active > a {color: #c5000a;background-color: #fff;}
+.nav-menu ul ul {margin-left: 10px;margin-top: 0;min-width: 100%;}
+#mobile-nav-toggle {border: 0;background: none;font-size: 36px;display: none;transition: all 0.4s;outline: none;cursor: pointer;right: 0;top: 0;}
+#mobile-nav-toggle i {color: #292d33 ;}
+@media (max-width: 991.98px) {
+  #mobile-nav-toggle {display: flex} 
+  #nav-menu-container {display: none}
+}
+@media (min-width: 992px) {
+.nav-menu{display: -ms-flexbox!important;display: flex!important;-ms-flex-wrap: wrap!important;flex-wrap: wrap!important;}
+.m-nav, .m-icon{display: none !important;}
+.nav-menu-container{display: flex;justify-content: space-between;}
+.nav-menu-container .m-foot{display: flex;margin-bottom: -1px;margin-top: -1px;}
+.nav-menu-container .m-foot .btn{border-radius: 0;display: flex;align-items: center;}
+}
+#mobile-nav {position: fixed;top: 0;padding: 0px;bottom: 0;z-index: 1023;background: #fff;left: -400px;width: 78%;min-width: 270px;max-width: 400px;overflow-y: auto;transition: 0.4s}
+#mobile-nav ul {padding: 0;margin: 0;list-style: none}
+#mobile-nav ul li {position: relative;font-size: 1rem;}
+#mobile-nav ul li a {color: #292d33 ;overflow: hidden;padding: 10px 30px 10px 25px;position: relative;text-decoration: none;width: 100%;display: block;outline: none;font-weight: 600;border-top: 1px solid #f8f8f9;}
+#mobile-nav ul li a:hover,
+#mobile-nav ul li.active > a {color: #c5000a}
+#mobile-nav ul li li {padding-left: 0px;font-size: 13px;}
+#mobile-nav ul .menu-has-children i {position: absolute;right: 0;z-index: 99;padding: 15px;cursor: pointer;color: #292d33 }
+#mobile-nav ul .menu-has-children i.fa-chevron-up {color: #c5000a}
+#mobile-nav ul .menu-has-children li i {padding:10px 15px;font-size: 1rem;}
+#mobile-nav ul .menu-has-children li a {text-transform: none;border-top: none;padding: 7px 30px 7px 25px;background-color: #f8f8f9;}
+#mobile-nav ul .menu-has-children li ul{border-bottom: 1px solid #e8e8ef;padding-bottom: 10px;margin-bottom: 10px;}
+#mobile-nav ul .menu-item-active {color: #c5000a}
+#mobile-body-overly {width: 100%;height: 100%;z-index: 1022;top: 0;left: 0;position: fixed;background: rgb(2 17 40 / 71%);display: none}
+body.mobile-nav-active {overflow: hidden;height: 100vh;}
+body.mobile-nav-active #mobile-nav {left: 0}
+body.mobile-nav-active #mobile-nav-toggle {color: #fff}
+
+.nav-head{background-image: url(../images/header-bg.jpg);background-size: cover;background-position: center;padding: 1rem 0;margin-bottom: 30px;border: none;}
+.nav-head a{border: none !important;}
+.nav-head img{max-width: 120px;}
+@media (max-width: 991.98px){
+.m-head{background-color: #f8f8f9;padding: 10px 20px;}
+.m-head a{margin: 0 auto;text-align: center;display: block;}
+.m-head img{height: 48px;}
+.m-foot{position: absolute;bottom: 0px;left: 0px;right: 0px;background-color: #fff;padding: 10px;}
+.menu-has-children > a{background-color: #fff;}
+.menu-has-children, .menu-has-children > a.menu-item-active{background-color: #f8f8f9;}
+.menu-has-children > a.menu-item-active{border-top-color:#efeff5 !important;}
+#mobile-nav > ul{height: calc(100vh - 150px);overflow: auto;}
+#mobile-nav{overflow: inherit;}
+#mobile-nav ul li a .m-icon{color: #c5000a;font-size: 1.125rem;display: inline-block;vertical-align: middle;line-height: 1;width: 25px;}
+}
